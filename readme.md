@@ -76,28 +76,28 @@ test_registration_invalid_email_no_at_symbol
 
 🚪 Тесты выхода из системы (test_logout.py)
 ✅ Успешный выход из личного кабинета
-test_logout_of_personal_account
+- test_logout_of_personal_account
 
 
 📊 Тесты навигации (test_to_from *.py)
 ✅ Переход в личный кабинет
-test_go_to_personal_account
+- test_go_to_personal_account
 
 ✅ Возврат в конструктор из ЛК через заголовок
-test_return_via_constructor_button
+- test_return_via_constructor_button
 
 ✅ Возврат в конструктор из ЛК через логотип
-test_return_via_logo
+- test_return_via_logo
 
 
 🍔 Тесты конструктора (test_constructor_sections.py)
 ✅ Переключение между разделами: Булки ↔ Соусы ↔ Начинки
- test_navigate_from_buns_to_fillings/
- test_navigate_from_sauces_to_fillings/
- test_navigate_from_buns_to_sauces/
- test_navigate_from_fillings_to_sauces/
- test_navigate_from_sauces_to_buns/
- test_navigate_to_buns_from_fillings
+- test_navigate_from_buns_to_fillings
+- test_navigate_from_sauces_to_fillings
+- test_navigate_from_buns_to_sauces
+- test_navigate_from_fillings_to_sauces
+- test_navigate_from_sauces_to_buns
+- test_navigate_to_buns_from_fillings
 
 
 ✅ Тесты с авторизацией и без авторизации
@@ -165,5 +165,6 @@ pytest -m "registration"
 Случайные данные - уникальные данные для каждого запуска
 
 Разные стратегии локаторов - повышение надежности тестов
+
 
 
