@@ -56,7 +56,7 @@ Sprint_5/
 - test_registration_name_is_empty_submit
 
 ✅ Регистрация с невалидным email (без @)
-test_registration_invalid_email_no_at_symbol
+- test_registration_invalid_email_no_at_symbol
 
 ✅ Регистрация с неполным доменом email
 - test_registration_email_no_domain
@@ -165,6 +165,7 @@ pytest -m "registration"
 Случайные данные - уникальные данные для каждого запуска
 
 Разные стратегии локаторов - повышение надежности тестов
+
 
 
 
