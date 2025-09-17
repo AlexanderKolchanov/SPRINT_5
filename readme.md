@@ -92,12 +92,12 @@ test_return_via_logo
 
 🍔 Тесты конструктора (test_constructor_sections.py)
 ✅ Переключение между разделами: Булки ↔ Соусы ↔ Начинки
-test_navigate_from_buns_to_fillings
-test_navigate_from_sauces_to_fillings
-test_navigate_from_buns_to_sauces
-test_navigate_from_fillings_to_sauces
-test_navigate_from_sauces_to_buns
-test_navigate_to_buns_from_fillings
+ test_navigate_from_buns_to_fillings/
+ test_navigate_from_sauces_to_fillings/
+ test_navigate_from_buns_to_sauces/
+ test_navigate_from_fillings_to_sauces/
+ test_navigate_from_sauces_to_buns/
+ test_navigate_to_buns_from_fillings
 
 
 ✅ Тесты с авторизацией и без авторизации
@@ -165,3 +165,4 @@ pytest -m "registration"
 Случайные данные - уникальные данные для каждого запуска
 
 Разные стратегии локаторов - повышение надежности тестов
+
