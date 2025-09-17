@@ -36,42 +36,42 @@ Sprint_5/
 🧪 Тестовые сценарии
 🔐 Тесты авторизации (test_login.py)
 ✅ Вход через кнопку "Войти в аккаунт"
-test_login_via_main_login_button
+- test_login_via_main_login_button
 
 ✅ Вход через "Личный кабинет"  
-test_login_via_personal_account_button
+- test_login_via_personal_account_button
 
 ✅ Вход через форму регистрации
-test_login_via_registration_form
+- test_login_via_registration_form
 
 ✅ Вход через форму восстановления пароля
-test_login_via_password_recovery_form
+- test_login_via_password_recovery_form
 
 
 📝 Тесты регистрации (test_registration.py)
 ✅ Успешная регистрация нового пользователя
-test_registration_new_account_success_submit
+- test_registration_new_account_success_submit
 
 ✅ Регистрация с пустым именем
-test_registration_name_is_empty_submit
+- test_registration_name_is_empty_submit
 
 ✅ Регистрация с невалидным email (без @)
 test_registration_invalid_email_no_at_symbol
 
 ✅ Регистрация с неполным доменом email
-test_registration_email_no_domain
+- test_registration_email_no_domain
 
 ✅ Регистрация с валидными паролями разной длины
-test_registration_valid_length_password_submit
+- test_registration_valid_length_password_submit
 
 ✅ Регистрация с короткими паролями
-test_registration_invalid_length_password_submit
+- test_registration_invalid_length_password_submit
 
 ✅ Проверка сообщения об ошибке пароля
-test_registration_short_password_error
+- test_registration_short_password_error
 
 ✅ Регистрация существующего пользователя
-test_registration_existing_user_failed
+- test_registration_existing_user_failed
 
 
 🚪 Тесты выхода из системы (test_logout.py)
@@ -83,7 +83,7 @@ test_logout_of_personal_account
 ✅ Переход в личный кабинет
 test_go_to_personal_account
 
-✅ Возвоат в конструктор из ЛК через заголовок
+✅ Возврат в конструктор из ЛК через заголовок
 test_return_via_constructor_button
 
 ✅ Возврат в конструктор из ЛК через логотип
@@ -165,4 +165,5 @@ pytest -m "registration"
 Случайные данные - уникальные данные для каждого запуска
 
 Разные стратегии локаторов - повышение надежности тестов
+
 
