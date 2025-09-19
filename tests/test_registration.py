@@ -2,7 +2,6 @@ import pytest
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.support.ui import WebDriverWait
 from locators import TestLocators
-from conftest import driver
 from helpers import generate_random_email, generate_random_password, generate_name
 from data import TestUser
 
