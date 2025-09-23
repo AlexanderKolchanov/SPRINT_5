@@ -20,7 +20,7 @@ class TestConstructorSections:
         
         driver.find_element(*TestLocators.SECTION_FILLINGS).click()
         active_section = driver.find_element(*TestLocators.ACTIVE_SECTION).text
-        assert active_section == "Начинки"
+        assert active_section == SectionData.NAMES["fillings"]
 
 
     def test_navigate_from_sauces_to_fillings(self, driver):
@@ -34,7 +34,7 @@ class TestConstructorSections:
         driver.find_element(*TestLocators.SECTION_SAUCES).click()
         driver.find_element(*TestLocators.SECTION_FILLINGS).click()
         active_section = driver.find_element(*TestLocators.ACTIVE_SECTION).text
-        assert active_section == "Начинки"
+        assert active_section == SectionData.NAMES["fillings"]
 
 
     def test_navigate_from_buns_to_sauces(self, driver, login):
@@ -47,7 +47,7 @@ class TestConstructorSections:
         
         driver.find_element(*TestLocators.SECTION_SAUCES).click()
         active_section = driver.find_element(*TestLocators.ACTIVE_SECTION).text
-        assert active_section == "Соусы"
+        assert active_section == SectionData.NAMES["sauses"]
 
 
     def test_navigate_from_fillings_to_sauces(self, driver):
@@ -61,7 +61,7 @@ class TestConstructorSections:
         driver.find_element(*TestLocators.SECTION_FILLINGS).click()
         driver.find_element(*TestLocators.SECTION_SAUCES).click()
         active_section = driver.find_element(*TestLocators.ACTIVE_SECTION).text
-        assert active_section == "Соусы"
+        assert active_section == SectionData.NAMES["sauses"]
 
 
     def test_navigate_from_sauces_to_buns(self, driver, login):
@@ -75,7 +75,7 @@ class TestConstructorSections:
         driver.find_element(*TestLocators.SECTION_SAUCES).click()
         driver.find_element(*TestLocators.SECTION_BUNS).click()
         active_section = driver.find_element(*TestLocators.ACTIVE_SECTION).text
-        assert active_section == "Булки"
+        assert active_section == SectionData.NAMES["buns"]
         
 
     def test_navigate_to_buns_from_fillings(self, driver):
@@ -89,4 +89,4 @@ class TestConstructorSections:
         driver.find_element(*TestLocators.SECTION_FILLINGS).click()
         driver.find_element(*TestLocators.SECTION_BUNS).click()
         active_section = driver.find_element(*TestLocators.ACTIVE_SECTION).text
-        assert active_section == "Булки"
+        assert active_section == SectionData.NAMES["buns"]
