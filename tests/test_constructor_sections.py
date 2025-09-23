@@ -47,7 +47,7 @@ class TestConstructorSections:
         
         driver.find_element(*TestLocators.SECTION_SAUCES).click()
         active_section = driver.find_element(*TestLocators.ACTIVE_SECTION).text
-        assert active_section == SectionData.NAMES["sauses"]
+        assert active_section == SectionData.NAMES["sauces"]
 
 
     def test_navigate_from_fillings_to_sauces(self, driver):
@@ -61,7 +61,7 @@ class TestConstructorSections:
         driver.find_element(*TestLocators.SECTION_FILLINGS).click()
         driver.find_element(*TestLocators.SECTION_SAUCES).click()
         active_section = driver.find_element(*TestLocators.ACTIVE_SECTION).text
-        assert active_section == SectionData.NAMES["sauses"]
+        assert active_section == SectionData.NAMES["sauces"]
 
 
     def test_navigate_from_sauces_to_buns(self, driver, login):
