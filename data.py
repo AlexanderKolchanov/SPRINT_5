@@ -6,3 +6,14 @@ class TestUser:
     EXISTING_EMAIL = 'aleksandr_kolchanov_30_123@yandex.ru'
     EXISTING_PASSWORD = 'hero321'
     EXISTING_NAME = 'Aleksandr' 
+
+
+class SectionData:
+    """
+    Данные для секций конструктора
+    """
+    NAMES = {
+        "buns": "Булки",
+        "sauces": "Соусы",
+        "fillings": "Начинки"
+    }
