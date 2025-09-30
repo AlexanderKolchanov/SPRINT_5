@@ -4,6 +4,7 @@ from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 from locators import TestLocators
 from data import TestUser
+from urls import MAIN_PAGE  # ← ДОБАВИЛ ЭТУ СТРОЧКУ
 
 
 @pytest.fixture(scope="function")
@@ -16,9 +17,9 @@ def driver():
     options.add_argument("--disable-blink-features=AutomationControlled")
     options.add_experimental_option("excludeSwitches", ["enable-automation"])
     
-    # Инициализация драйвера
+   # Инициализация драйвера
     driver = webdriver.Chrome(options=options)
-    driver.get("https://stellarburgers.nomoreparties.site/")
+    driver.get(MAIN_PAGE)  # ← ИЗМЕНИЛ ЭТУ СТРОЧКУ
     
     yield driver
     # Закрытие драйвера после теста
